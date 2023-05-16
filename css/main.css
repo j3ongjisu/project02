@@ -1,3 +1,7 @@
+/* *{
+    outline: 1px solid black;
+} */
+
 .top_bar {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -68,7 +72,7 @@
 .section{
     width: 1200px;
     margin: 0 auto;
-    background: #ebebeb;
+    background: #ebebeb8c;
 }
 
 .section figure {
