@@ -1,0 +1,144 @@
+h1 {
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.container {
+    /* 요소 가운데로 배치 */
+    width: 1200px;
+    margin: 0 auto;
+
+    border: 1px solid #000;
+    background: yellow;
+}
+
+.itm {
+    background: tomato;
+    color: #fff;
+    text-align: center;
+}
+
+.case01 {
+    display: flex;
+    gap: 30px;
+    /* gpa -> box 사이의 간격을 떨군다. */
+}
+
+.case02 {
+    display: flex;
+    justify-content: space-between;
+    /* 양 쪽으로 배치 */
+}
+
+.case03 {
+    display: flex;
+}
+
+.case03 .right {
+    /* 한 쪽에만 auto를 줌 */
+    margin: 0 0 0 auto;
+}
+
+/* 02와 03 사이에 margin을 사용하여 공간 주기 */
+.case03 .right2 {
+    margin: 0 0 0 100px;
+}
+
+.top_bar {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.top_bar .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    /* padding 대신 line-height로 박스 안의 내용 가운데 위치 시킴 */
+    /* box의 크기는 선의 크기를 포함하여 32임 */
+    line-height: 30px;
+}
+
+.top_bar .customer {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.top_bar .customer li {
+    padding: 0 10px;
+    /* 선 긋기 */
+    border-right: 1px solid #ddd;
+}
+
+/* 높이는 안 주는 게 원칙? */
+#header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: #f9f9f9;
+}
+
+#header .inner {
+    /* display랑 position은 위에 써줌 */
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 위에 h1 먼저 쓴 것 때문에 써둠 */
+#header h1 {
+    text-align: left;
+    margin: 0;
+}
+
+#header .gnb {
+    margin: 0 0 0 auto;
+}
+
+/* #header * {
+    outline: 1px solid #333;
+} */
+
+#header .right {
+    margin: 0 0 0 50px;
+    color: tomato;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+/* 이거 왜 하는 건지 알아보기 */
+#header .gnb>ul>li {
+    position: relative;
+}
+
+/* 가상 요소 */
+/* 가상 요소는 드래그가 안 됨 */
+/* li~li 형제 선택자이므로 형제를 선택했기 때문에
+자기 자신이 빠짐 */
+/* 두 번째 요소를 선택하려면 class 속성을 붙이면 됨 */
+#header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    /* 폰트 사이즈(기본 16px) 보다 박스 작게 만듦 */
+    height: 12px;
+    background: #ddd;
+}

@@ -1,0 +1,87 @@
+.top_bar {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.top_bar .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.top_bar .customer {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.top_bar .customer li {
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: #f9f9f9;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    text-align: left;
+    margin: 0;
+}
+
+.header .gnb {
+    margin: 0 0 0 auto;
+}
+
+.header .right {
+    margin: 0 0 0 50px;
+    color: tomato;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+}
+
+/* 가운데 */
+.section figure {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto 30px auto;
+    border-radius: 0%;
+    overflow: hidden;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.section figure img {
+    width: 100%;
+    height: 100%;
+}
