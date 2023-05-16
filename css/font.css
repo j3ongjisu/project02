@@ -1,0 +1,9 @@
+/* 폰트 -> google font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* 아이콘 -> xeicon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
