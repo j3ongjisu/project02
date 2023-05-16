@@ -43,12 +43,6 @@
     margin: 0 0 0 auto;
 }
 
-.header .right {
-    margin: 0 0 0 50px;
-    color: tomato;
-    font-size: 30px;
-    font-weight: 700;
-}
 
 .header .gnb>ul {
     display: flex;
@@ -71,14 +65,21 @@
 }
 
 /* 가운데 */
+.section{
+    width: 1200px;
+    margin: 0 auto;
+    background: #ebebeb;
+}
+
 .section figure {
     position: relative;
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto 30px auto;
-    border-radius: 0%;
+    border-radius: 50%;
     overflow: hidden;
-    border: 5px solid rgba(0, 0, 0, 0.1);
+    border: 15px solid rgba(61, 61, 61, 0.1);
+    
 }
 
 .section figure img {
