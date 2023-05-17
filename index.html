@@ -8,10 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
+    <!-- top_bar -->
     <div class="top_bar">
         <div class="inner">
             <div class="slogan">
@@ -25,6 +30,7 @@
             </ul>
         </div>
     </div>
+
     <header class="header">
         <div class="inner">
             <h1>
@@ -41,13 +47,38 @@
             </nav>
         </div>
     </header>
-    <div class="main_full">
-        <div class="section">
+
+    <!-- 가운데 슬라이드 -->
+    <section id="mainVisual">
+        <div class="mainSlide">
+            <div class="itm itm01">01</div>
+            <div class="itm itm02">02</div>
+            <div class="itm itm03">03</div>
+        </div>
+    </section>
+
+    <!-- 사진 3개 있는 거 -->
+    <section id="event">
+        <h2>멜론 차트</h2>
+        <p>국내 / 해외</p>
+        <div class="inner clearfix">
             <figure>
-                <img src="./images/album 01.jpg" alt="">
+                <div>
+                    <img src="./images/melonchart01.jpg" alt="">
+                </div>
+                <div class="text">
+                    <strong>dd</strong>
+                </div>
+            </figure>
+            <figure>
+                <img src="./images/melonchart02.jpg" alt="">
+            </figure>
+            <figure>
+                <img src="./images/melonchart03.jpg" alt="">
             </figure>
         </div>
-    </div>
+    </section>
+
 </body>
 
 </html>

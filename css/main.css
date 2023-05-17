@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     height: 100px;
-    background: #f9f9f9;
+
 }
 
 .header .inner {
@@ -68,25 +68,116 @@
     background: #ddd;
 }
 
-/* 가운데 */
-.section{
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ가운데 슬라이드 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+#mainVisual .itm {
+    height: 700px;
+}
+
+#mainVisual .itm01 {
+    background: url(../images/logo_melon02.png) no-repeat center center/cover;
+}
+
+#mainVisual .itm02 {
+    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .itm03 {
+    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 0;
+    width: 100px;
+    height: 100px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#mainVisual .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#mainVisual .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* 버튼 가운데로 만들기 */
+#mainVisual .slick-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* 버튼 가로 배치 */
+#mainVisual .slick-dots>* {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* 버튼 모양 다듬기 */
+#mainVisual .slick-dots li button {
+    background: #00d344;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+#mainVisual .slick-dots li.slick-active button {
+    background: #333;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ사진 3개ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+#event {
+    padding: 100px 0;
+}
+
+#event h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+#event p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+#event .inner {
+    display: flex;
+    gap: 30px;
     width: 1200px;
     margin: 0 auto;
-    background: #ebebeb8c;
+    padding: 0 15px;
 }
 
-.section figure {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    margin: 0 auto 30px auto;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 15px solid rgba(61, 61, 61, 0.1);
-    
+#event .inner figure {
+    /* 한 칸씩 차지하라는 뜻 */
+    flex: 1;
 }
 
-.section figure img {
+#event .inner figure img {
     width: 100%;
-    height: 100%;
+    height: 370px;
+    object-fit: none;
 }
