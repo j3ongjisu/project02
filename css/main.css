@@ -63,14 +63,14 @@
     top: 50%;
     left: -20px;
     transform: translate(-50%, -50%);
-    width: 1px;
+    width: 2px;
     height: 12px;
     background: #ddd;
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ가운데 슬라이드 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 #mainVisual .itm {
-    height: 700px;
+    height: 800px;
 }
 
 #mainVisual .itm01 {
@@ -128,7 +128,7 @@
 
 /* 버튼 모양 다듬기 */
 #mainVisual .slick-dots li button {
-    background: #00d344;
+    background: #333;
     color: white;
     border-radius: 50%;
     padding: 5px;
@@ -140,7 +140,7 @@
 }
 
 #mainVisual .slick-dots li.slick-active button {
-    background: #333;
+    background: #00d344;
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ사진 3개ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -156,11 +156,33 @@
     text-align: center;
 }
 
-#event p {
+#event ul {
+    display: flex;
+    gap: 20px;
     font-size: 15px;
     font-weight: 300;
     margin: 0 0 50px 0;
     text-align: center;
+}
+
+#event ul li{
+    display: inline-block;
+    background: #00d344;
+    border: 1px solid #f9f9f9;
+    border-radius: 20%;
+    color: white;
+    padding: 6px;
+}
+
+#event ul li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 12px;
+    background: #ddd;
 }
 
 #event .inner {
@@ -176,8 +198,25 @@
     flex: 1;
 }
 
+#event .inner figure .albumImg {
+    box-shadow: 5px 5px 5px #4b4b4b;
+}
+
 #event .inner figure img {
     width: 100%;
     height: 370px;
-    object-fit: none;
+    object-fit: cover;
+}
+#event .inner figure .text{
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+#event .inner figure .text strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#event .inner figure .text .artist {
+    margin: 0;
 }
