@@ -1,0 +1,293 @@
+/* *{
+    outline: 1px solid #555;
+} */
+
+.top_bar {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.top_bar .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.top_bar .customer {
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.top_bar .customer li {
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.wrapper {}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.header .gnb {
+    margin: 0 0 0 auto;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+/* bar 집어넣기 */
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li>a {
+    display: block;
+    font-size: 18px;
+}
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    width: 2px;
+    height: 12px;
+    background: #ddd;
+    transform: translate(-50%, -50%);
+}
+
+.header .search {
+    margin: 0 0 0 50px;
+}
+
+.header .search i {
+    font-size: 30px;
+}
+
+/* ㅡㅡㅡㅡㅡmain 슬라이드ㅡㅡㅡㅡㅡ */
+.main_visual {
+    position: relative;
+}
+
+.main_visual .main_slide {}
+
+.main_visual .main_slide figure {
+    position: relative;
+    height: 800px;
+}
+
+.main_visual .main_slide .itm01 {
+    background: url(../images/main01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm02 {
+    background: url(../images/main02.PNG) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm03 {
+    background: url(../images/main03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .slogan {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    padding: 0 15px;
+}
+
+.main_visual .main_slide .slogan strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    /* 그림자 주는 법 */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.main_visual .main_slide .slogan p {
+    margin: 0 0 30px 0;
+    
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.main_visual .main_slide .slogan a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 3px 12px 5px 12px;
+}
+
+/* 2번째 슬라이드 글자 색깔 검은색으로 바꿔줌 */
+.main_visual .main_slide .itm02 .slogan strong {
+    color: #444;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.main_visual .main_slide .itm02 .slogan p {
+    color: #444;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* 아이콘으로 이전, 다음 버튼 만들기 */
+
+.main_visual .arrows {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    width: 100%;
+}
+
+.main_visual:hover .arrows {
+    display: block;
+}
+
+.main_visual .arrows i {
+    font-size: 40px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.main_visual .arrows .left {
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+.main_visual .arrows .right {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+
+/* ㅡㅡㅡㅡㅡ중간 사진 3개 있는 영역ㅡㅡㅡㅡㅡ */
+.main_content {
+    padding: 100px 0;
+}
+
+.main_content .tit {
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.main_content .tit h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    
+}
+
+.main_content .tit p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.main_content .content {
+    display: flex;
+    gap: 30px;
+}
+
+.main_content .content figure {
+    flex: 1;
+    text-align: center;
+}
+
+.main_content .content figure .box {
+    margin: 0 0 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main_content .content figure strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.main_content .content figure a {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 5px 12px 3px 12px;
+    font-weight: 300
+}
+
+/* 이미지에 마우스 올라갔을 때 반응 */
+.main_content .content figure img {
+    transition: 0.5s;
+
+}
+
+.main_content .content figure:hover img {
+    transform: scale(1.2);
+}
+
+/* footer */
+.footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .top {
+    line-height: 80px;
+    border-bottom: 1px solid #777;
+}
+
+.footer .top .inner{
+    text-align: center;
+}
+
+.footer .top .inner>ul{
+    font-size: 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.footer address {
+    line-height: 80px;
+}
+
+
+.footer address ul>li{
+    font-size: 12px;
+}

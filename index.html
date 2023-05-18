@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Graff main page - 실습</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
@@ -19,86 +21,142 @@
     <!-- top_bar -->
     <div class="top_bar">
         <div class="inner">
-            <div class="slogan">
-                Melon::음악이 필요한 순간, 멜론
-            </div>
             <ul class="customer">
-                <li>로그인</li>
-                <li>이용권</li>
-                <li>이벤트</li>
-                <li>공지사항</li>
+                <li>LOGIN</li>
+                <li>HOME </li>
+                <li>SITE MAP</li>
+                <li>CONTACT US</li>
             </ul>
         </div>
     </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="inner">
+                <h1>
+                    <a href="/">
+                        <img src="./images/monami_logo.jpg" alt="Graff - 실습">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <!-- &copy; &nbsp; &amp; -->
+                    <ul>
+                        <li><a href="">모나미 소개</a></li>
+                        <li><a href="">모나미 제품</a></li>
+                        <li><a href="">NEWS &amp VIDEO</a></li>
+                        <li><a href="">모나미 미술대회</a></li>
+                        <li><a href="">고객지원</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <i class="xi-search"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main_visual">
+                <h2 class="blind">메인 슬라이드 IR</h2>
+                <div class="main_slide">
+                    <figure class="itm01">
+                        <div class="slogan">
+                            <strong><p>어쩌면 삶은 <br> 
+                                인생이라는 종이 위에 <br>
+                                써 내려가는 <br>
+                                펜의 기록 같습니다. <br></strong>
+                            
+                            그 중에서도 지우고 싶지 않은 기록이 있습니다.<br>
+                            모나미는 언제나 당신의 행복한 기록과 함께 합니다.<br>
+                            </p>
+                            <a href="">more</a>
+                        </div>
+                    </figure>
+                    <figure class="itm02">
+                        <div class="slogan">
+                            <strong>NEW
+                                ARRIVALS</strong>
+                            <p>가장 먼저 만나는 설레는 기다림 </p>
+                            <a href="">more</a>
+                        </div>
+                    </figure>
+                    <figure class="itm03">
+                        <div class="slogan">
+                            <strong>전래동화 첫 번째 시리즈 <br>
+                                ‘153 단군신화’</strong>
+                            <p>단군 출생, 고조선 건국 이야기 담은 틴케이스 패키지<br>
+                                곰, 호랑이 등 귀여운 캐릭터로 표현<br>
 
-    <header class="header">
-        <div class="inner">
-            <h1>
-                <img src="./images/logo_melon142x99.png" alt="">
-            </h1>
-            <nav class="gnb">
-                <ul>
-                    <li><i class="xi-chart-bar"></i><a href=""> 멜론차트</a></li>
-                    <li><i class="xi-album"></i><a href=""> 최신음악</a></li>
-                    <li><i class="xi-library-music"></i><a href=""> 장르음악</a></li>
-                    <li><i class="xi-headset"></i><a href=""> 멜론DJ</a></li>
-                    <li><i class="xi-music"></i><a href="" > 마이뮤직</a></li>
+                                볼펜 5본입, 스티커 구성으로 다이어리 꾸미기 등 활용 가능<br>
+                                </p>
+                            <a href="">more</a>
+                        </div>
+                    </figure>
+                </div>
+
+                <ul class="arrows">
+                    <li class="left">
+                        <i class="xi-arrow-left"></i>
+                    </li>
+                    <li class="right">
+                        <i class="xi-arrow-right"></i>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </section>
 
-    <!-- 가운데 슬라이드 -->
-    <section id="mainVisual">
-        <div class="mainSlide">
-            <div class="itm itm01">01</div>
-            <div class="itm itm02">02</div>
-            <div class="itm itm03">03</div>
-        </div>
-    </section>
+            <!-- 중간 사진 3개 있는 영역 -->
+            <section class="main_content">
+                <div class="tit inner">
+                    <h2>BEST PRODUCT</h2>
+                    <p>언제 어디서나 생활속에 함께하는 모나미 </p>
+                </div>
+                <div class="content inner">
+                    <figure>
+                        <div class="box">
+                            <img src="./images/pen01.jpg" alt="">
+                        </div>
+                        <strong>BP 153</strong>
+                        <a href="">구매하기</a>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./images/pen02.jpg" alt="">
+                        </div>
+                        <strong>153 아이디 샤프</strong>
+                        <a href="">구매하기</a>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./images/pen04.jpg" alt="">
+                        </div>
+                        <strong>클리커</strong>
+                        <a href="">구매하기</a>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="top">
+                <div class="inner">
+                    <ul>
+                        <li>ADDRESS : 경기도 용인시 수지구 손곡로 17</li>
+                        <li> TEL : 031-216-0153</li>
+                        <li> FAX : 031-270-5154</li>
+                        <li>회사소개</li>
+                        <li>개인정보처리방침</li>
+                    </ul>
+                </div>
+            </div>
+            <address>
+                <div class="inner">
+                    <ul>
+                        <li>COPYRIGHT(C) 2017 MONAMI.CO.,LTD. ALL RIGHTS RESERVED.</li>
+                        <li>&copy; lee.</li>
+                    </ul>
+                    
+                </div>
+                
+            </address>
 
-    <!-- 사진 3개 있는 거 -->
-    <section id="event">
-        <div class="top">
-        <h2>멜론 실시간 차트</h2>
-        <ul>
-            <li>국내</li>
-            <li>해외</li>
-        </ul>
-        </div>
-        <div class="inner clearfix">
-            <figure>
-                <div class="albumImg">
-                    <img src="./images/melonchart01.jpg" alt="">
-                </div>
-                <div class="text">
-                    <strong>I AM</strong>
-                    <p class="artist">IVE (아이브)</p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="albumImg">
-                    <img src="./images/melonchart02.jpg" alt="">
-                </div>
-                <div class="text">
-                    <strong> UNFORGIVEN (feat. Nile Rodgers)</strong>
-                    <p class="artist">LE SSERAFIM (르세라핌)</p>
-                </div>
-            </figure>
-            
-            <figure>
-                <div class="albumImg">
-                    <img src="./images/melonchart03.jpg" alt="">
-                </div>
-                <div class="text">
-                    <strong>Spicy</strong>
-                    <p class="artist">aespa</p>
-                </div>
-            </figure>
-        </div>
-    </section>
-
+        </footer>
+    </div>
 </body>
 
 </html>
